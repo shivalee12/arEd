@@ -102,8 +102,7 @@
                         <h2 class="contact-title" style="color:black;">Get in Touch!</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post"
-                            id="contactForm" novalidate="novalidate">
+                        <form class="form-contact contact_form" method="post" id="contactForm" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -128,9 +127,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-                            </div>
+                            <a href="/">
+                                <div class="form-group mt-3">
+                                    <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                                </div>
+                            </a>
                         </form>
                     </div>
 
@@ -163,22 +164,6 @@
         </section>
         <!-- ================ contact section end ================= -->
 
-        <script>
-            var $form = $('form#test-form'),
-                url = 'https://script.google.com/macros/s/AKfycbzztXmlbUKAODWBo9lAkjiht9EvtCloUr0Fbskhgsvm12pvh1o/exec'
-
-            $('#submit-form').on('click', function (e) {
-                e.preventDefault();
-                var jqxhr = $.ajax({
-                    url: url,
-                    method: "GET",
-                    dataType: "json",
-                    data: $form.serializeObject()
-                }).success(
-                    // do something
-                );
-            })
-        </script>
     </main>
     <footer>
         <!--? Footer Start-->
@@ -250,9 +235,9 @@
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     Copyright &copy;<script>
                                         document.write(new Date().getFullYear());
-                                    </script> All rights reserved | This template is made with <i
-                                        class="fa fa-heart" aria-hidden="true"></i> by <a
-                                        href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    </script> All rights reserved | This template is made with <i class="fa fa-heart"
+                                        aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                        target="_blank">Colorlib</a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </p>
                             </div>
