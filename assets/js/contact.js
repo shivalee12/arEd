@@ -56,12 +56,25 @@ $(document).ready(function () {
                 },
 
                 submitHandler: function (form) {
-                    var jqxhr = $.ajax({
-                        url: 'https://script.google.com/macros/s/AKfycbzztXmlbUKAODWBo9lAkjiht9EvtCloUr0Fbskhgsvm12pvh1o/exec',
-                        method: "GET",
-                        dataType: "json",
-                        data: $(form).serialize()
-                    }).success();
+                    $.ajax({
+                        url: "https://docs.google.com/forms/d/e/1FAIpQLSfA5gdAjLa9wAKWW_6LU8sj0EdsGRtEdMIrEY7tJFPssm4aBw/formResponse",
+
+                        data: {
+                            "entry.1022086369": $('#name').val(),
+                            "entry.549682075": $('#email').val(),
+                            "entry.886790186": $('#info').val()
+                        },
+                        type: "POST",
+                        dataType: "xml",
+                        crossDomain: true,
+
+                        success: function(data){
+                        //   window.location.replace("youraddress");
+                        },
+                        error: function(data){
+                            console.log();
+                        }
+                    });
                     window.location.href = "http://ared.co.in";
                 }
             })
