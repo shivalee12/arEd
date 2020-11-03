@@ -64,7 +64,7 @@ $(document).ready(function () {
                     }).success(
                         console.log($(form).serialize())
                     );
-                    window.location.href = "http://ared.co.in";
+                    // window.location.href = "http://ared.co.in";
                     console.log("Redirected")
 
                 }
