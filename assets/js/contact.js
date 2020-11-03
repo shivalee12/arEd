@@ -61,12 +61,8 @@ $(document).ready(function () {
                         method: "GET",
                         dataType: "json",
                         data: $(form).serialize()
-                    }).success(
-                        console.log($(form).serialize())
-                    );
+                    }).success();
                     window.location.href = "http://ared.co.in";
-                    console.log("Redirected")
-
                 }
             })
         })
