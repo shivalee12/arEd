@@ -12,7 +12,7 @@ $(document).ready(function () {
         $(function () {
             $('#contactForm').validate({
                 rules: {
-                    name: {
+                    "entry.1022086369": {
                         required: true,
                         minlength: 2
                     },
@@ -24,17 +24,17 @@ $(document).ready(function () {
                         required: true,
                         minlength: 5
                     },
-                    email: {
+                    "entry.549682075": {
                         required: true,
                         email: true
                     },
-                    message: {
+                    "entry.886790186": {
                         required: true,
                         minlength: 20
                     }
                 },
                 messages: {
-                    name: {
+                    "entry.1022086369": {
                         required: "come on, you have a name, don't you?",
                         minlength: "your name must consist of at least 2 characters"
                     },
@@ -46,10 +46,10 @@ $(document).ready(function () {
                         required: "come on, you have a number, don't you?",
                         minlength: "your Number must consist of at least 5 characters"
                     },
-                    email: {
-                        required: "no email, no message"
+                    "entry.549682075": {
+                        required: "that doesn't look like an email!"
                     },
-                    message: {
+                    "entry.886790186": {
                         required: "um...yea, you have to write something to send this form.",
                         minlength: "thats all? really?"
                     }
