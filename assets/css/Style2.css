@@ -1,0 +1,31 @@
+/*Email Bar*/
+.email-style{
+    
+    max-lines: "256";
+    width: 230px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid blue;
+    color: #ffffff;
+     background: transparent;
+     border-top: 0px;
+     border-left: 0px;
+     border-right: 0px;    
+          
+}
+.email-style:hover{
+    border: 3px solid blue;
+   
+ }
+
+.submit-style{
+    cursor:pointer;
+    width : 250px;   
+    
+}
+
+.heading-style{
+    margin-bottom: 0px;
+    
+}
+
